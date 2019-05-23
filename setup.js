@@ -5,11 +5,11 @@ const fs = require("fs");
 let baseConfig = fs.readFileSync("./config_base.txt", "utf8");
 
 const defaultSettings = {
-  "prefix": "~",
-  "modLogChannel": "mod-log",
-  "modRole": "Moderator",
-  "adminRole": "Administrator",
-  "systemNotice": "true",
+  "prefix": "-",
+  "modLogChannel": "bot-logs",
+  "modRole": "BotMod",
+  "adminRole": "Mega admin",
+  "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
   "welcomeChannel": "welcome",
   "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :D",
   "welcomeEnabled": "false"
